@@ -4,7 +4,7 @@ module API
       def create
         event = Event.new(event_params)
         if event.save
-          render json: event, status: 201
+          render json: event, status: 201 #location: event  would set location  header to url event/:id
         end
       end
 
