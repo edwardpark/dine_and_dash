@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class ListingMoviesTest < ActionDispatch::IntegrationTest
-  setup { host! 'api.localhost:3000'} #need host! because api subdomain
+  setup { host! 'lvh.me:3000'} #need host! because api subdomain
 
   test 'returns list of all current playing movies'
     get '/movies'
