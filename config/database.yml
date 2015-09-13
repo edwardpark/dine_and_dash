@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: flix_food_development
+  database: flix_food_db
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
