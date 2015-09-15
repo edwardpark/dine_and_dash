@@ -1,3 +1,3 @@
 (function() {
-  angular.module('dinedash', ['ngResource']);
+  angular.module('dinedash', ['ngResource','movieServices']);
 })();
