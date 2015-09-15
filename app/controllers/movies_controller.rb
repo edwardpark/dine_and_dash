@@ -20,7 +20,7 @@ class MoviesController < ApplicationController
 
     end
 
-      @current_playing_movies = Movie.where("currentlyPlaying = true")
+      @current_playing_movies = Movie.where(currentlyPlaying:true)
       binding.pry
       render json: @current_playing_movies, status: 200
   end

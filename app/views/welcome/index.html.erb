@@ -1,1 +1,11 @@
 <h2>welcome to food and flix</h2>
+<div ng-controller="MovieIndex">
+  <button ng-click ="showList()">See All Movies!</button>
+  <div ng-show="listIsVisible">{{someValue}}</div>
+  <div ng-show="listIsVisible" ng-repeat="movie in movies">
+    <p>title: {{movie.title}}</p>
+    <p>description: {{movie.description}}</p>
+    <hr/>
+  </div>
+
+</div>
